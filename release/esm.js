@@ -1,5 +1,5 @@
 import { ApplicationRef, ComponentFactoryResolver, Injectable, Injector, Input, Component, ElementRef, ViewEncapsulation, HostListener, ViewChild, HostBinding, Renderer, Directive, Output, EventEmitter, ViewContainerRef, NgModule, ChangeDetectionStrategy, ChangeDetectorRef, NgZone, TemplateRef, ContentChild } from '@angular/core';
-import { CommonModule, Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { trigger, style, animate, transition } from '@angular/animations';
 import { DomSanitizer } from '@angular/platform-browser';
 import { rgb } from 'd3-color';
@@ -4170,13 +4170,6 @@ var ChartCommonModule = /** @class */ (function () {
     }
     ChartCommonModule = __decorate([
         NgModule({
-            providers: [
-                Location,
-                {
-                    provide: LocationStrategy,
-                    useClass: PathLocationStrategy
-                }
-            ],
             imports: [
                 CommonModule,
                 AxesModule,
